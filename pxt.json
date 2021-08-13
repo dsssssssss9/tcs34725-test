@@ -5,8 +5,8 @@
         "core": "*",
         "radio": "*",
         "microphone": "*",
-        "pxt-tcs34725": "github:samnied/pxt-tcs34725#v0.0.1",
-        "colorbit": "github:51bit/colorbit#v0.1.3"
+        "colorbit": "github:51bit/colorbit#v0.1.3",
+        "envirobit": "github:pimoroni/pxt-envirobit#v0.0.5"
     },
     "files": [
         "main.blocks",

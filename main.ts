@@ -1,8 +1,8 @@
 input.onButtonPressed(Button.A, function () {
-    colorbit_51bit.showColor(colorbit.rgb(TCS34725.getSensorData(RGB.RED), TCS34725.getSensorData(RGB.GREEN), TCS34725.getSensorData(RGB.GREEN)))
+    colorbit_51bit.showColor(colorbit.rgb(envirobit.getRed(), envirobit.getGreen(), envirobit.getBlue()))
 })
 let colorbit_51bit: colorbit.Strip = null
-TCS34725.start(TCS34725_ATIME.TIME_24_MS, TCS34725_AGAIN.GAIN_4X)
+envirobit.setColourIntegrationTime(24)
 colorbit_51bit = colorbit.initColorBit(DigitalPin.P2, BitColorMode.RGB)
 colorbit_51bit.setBrightness(64)
 colorbit_51bit.showColorIcon(ColorIcon.Yes, colorbit.colors(BitColors.Indigo))
